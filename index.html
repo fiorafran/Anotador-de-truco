@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=0">
+	<title>Anotador de truco</title>
+	<link rel="shortcut icon" href="img/ico.jpg">
+	<link rel="stylesheet" href="estilos/styles.css">
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="visible" id="main">	
+		<div class="cont-texts">
+			<input type="text" placeholder="Equipo 1" value="" maxlength="15" id="equipo1" class="txtBlanquito">
+			<input type="text" placeholder="Equipo 2" value="" maxlength="15" id="equipo2" class="txtBlanquito">
+		</div>
+		<div class="cont-botones">
+			<input type="button" value="a 24" id="a24" class="Selected">
+			<input type="button" value="a 30" id="a30" class="notSelected">
+		</div>
+		<div class="cont-btnIni">	
+		<input type="button" value="Iniciar" id="play">
+		</div>
+	</div>
+
+	<div class="oculto" id="inGame">
+		<div id="t1">
+			<div class="barra">
+				<input type="button" value="+" id="se1" class="SRF">
+				<input type="text" value="" id="team1" class="EQPS" readonly>
+			</div>
+			<div id="E1L1" class="cont-palitos">
+				<img src="img/0.png" id="f11">
+				<img src="img/0.png" id="f12">
+				<img src="img/0.png" id="f13">
+			</div>
+			<div id="E1L2" class="cont-palitos">
+				<img src="img/0.png" id="f14">
+				<img src="img/0.png" id="f15">
+				<img src="img/0.png" id="f16">
+			</div>
+		</div>
+		<div id="t2">
+			<div class="barra">
+				<input type="text" value="" id="team2" class="EQPS" readonly>
+				<input type="button" value="+" id="se2" class="SRF">
+			</div>
+			<div id="E2L1" class="cont-palitos">
+				<img src="img/0.png" id="f21">
+				<img src="img/0.png" id="f22">
+				<img src="img/0.png" id="f23">
+			</div>
+			<div id="E2L2" class="cont-palitos">
+				<img src="img/0.png" id="f24">
+				<img src="img/0.png" id="f25">
+				<img src="img/0.png" id="f26">
+			</div>
+		</div>
+		<div id="cont-final">
+			<div id="gamemode">
+				<input type="text" value="" id="max" readonly>
+			</div>
+			<div id="puntaje">
+				<div class="cont-p">
+					<input type="button" value="-" id="re1" class="SRF">
+					<input type="text" value="0" id="p1" class="contador" readonly> 
+				</div>
+				<div id="finMax">
+				<input type="button" value="Fin" id="fin" class="SRF">
+				</div>
+				<div class="cont-p">
+					<input type="text" value="0" id="p2" class="contador" readonly> 
+					<input type="button" value="-" id="re2" class="SRF">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

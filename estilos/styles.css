@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+	margin: 0px;
+	overflow-x: hidden; 
+	overflow-y: hidden;
+}
+input {
+	font-family: 'Oswald', sans-serif;
+}
+
+/* VISIBLE / OCULTO*/
+.visible {
+	display: block;
+	visibility: visible;
+}
+
+.oculto {
+	display: none;
+	visibility: hidden;
+}
+
+/* PANTALLA INICIAL*/
+#main {
+	background-color: green;
+	height: 100vh;
+	padding: 80px 0px 0px 0px;
+}
+
+.cont-texts {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*padding: 50px 0px 50px 0px;*/
+}
+
+.cont-botones {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.cont-btnIni {
+	display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px 0px 0px
+}
+
+/* PANTALLA EN JUEGO */
+
+#inGame {
+	background-color: green;
+    height: 100vh;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#t1, #t2 {
+	width: 50vw;
+	height: 85vh;
+}
+#t1 {
+	width: 49.7vw;
+	border-right: 1px solid white;
+}
+
+.barra {
+	margin: 0px 0px 5px 0px
+}
+
+.cont-palitos {
+	height: 40vh;
+	border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+	width: 6vw;
+	margin: 0px 0px;
+}
+
+#cont-final {
+	width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #gamemode {
+ 	width: 100vw;
+    height: 5vh;
+ }
+
+ #puntaje{
+	width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+ }
+
+#finMax {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .cont-p {
+ 	display: flex;
+ }
+
+/* INPUTS TEXT/BOTONES MAIN*/
+
+.txtBlanquito {
+	width: 70vw;
+    height: 6vh;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+    margin: 30px 0px;
+    outline: none;
+    font-size: 25px;
+    padding: 5px 0px;
+}
+input::placeholder {
+	color: #ffffff87;
+	font-size: 25px;
+}
+
+#play {
+	text-align: center;
+    background-color: green;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 35vw;
+    height: 7vh;
+    margin: 20px 32px 0px 0px;
+    font-size: 25px;
+    padding: 0px 0px 3px;
+}
+#play:hover {
+	transition: 0.3s;
+	background-color: white;
+	color: black;
+}
+
+/* SELECCIONAR MODO DE JUEGO */
+
+.Selected {
+	transition: background 0.5s, color 0.5s;
+	text-align: center;
+    background-color: #ffffffe0;
+    color: black;
+    border: 2px solid #ffffff;
+    width: 35vw;
+    height: 7vh;
+    margin: 20px 2px;
+    font-size: 25px;
+    padding: 0px 0px 3px;
+    outline: none;
+}
+.notSelected {
+	text-align: center;
+    background-color: green;
+    color: #ffffff5e;
+    border: 2px solid #ffffff5e;
+    width: 35vw;
+    height: 7vh;
+    margin: 20px 2px;
+    font-size: 25px;
+    padding: 0px 0px 3px;
+    outline: none;
+}
+
+/* INPUTS TEXT/BOTONES INGAME*/
+
+.SRF {
+	border: 2px solid white;
+    background-color: green;
+    color: white;
+    width: 13vw;
+    height: 7vh;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px 0px 3px 0px;
+    outline: none;
+}
+
+.SRF:hover {
+	transition: 0.2s;
+	background-color: white;
+	color: black;
+}
+
+.EQPS {
+	width: 33vw;
+    height: 4vh;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border: 0px;
+    outline: none;
+    font-size: 20px;
+    padding: 0px 1px;
+}
+
+.contador {
+	width: 15.7vw;
+    height: 6.7vh;
+    text-align: center;
+    font-size: 38px;
+    margin: 0px 90px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: 0px;
+    outline: none;
+}
+
+#max {
+	width: 30px;
+    text-align: center;
+    height: 12px;
+    color: white;
+    background-color: green;
+    border: 0px;
+    font-size: 15px;
+    margin: 0px 0px 5px 0px;
+    outline: none;
+}
+
+@media (max-width: 700px) {
+
+    img {
+        width: 14vw;
+        margin: 5px 0px;
+    }
+
+    .contador {
+        margin: 0px 22px;
+    }
+}
